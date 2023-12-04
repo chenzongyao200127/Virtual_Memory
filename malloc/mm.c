@@ -149,8 +149,8 @@ void mm_free(void *bp)
     PUT(FTRP(bp), PACK(size, 0));
     coalesce(bp);
 }
-
 /* $end mmfree */
+
 /*
  * coalesce - Boundary tag coalescing. Return ptr to coalesced block
  */
